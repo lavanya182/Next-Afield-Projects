@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./My Portfolio_files/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./My Portfolio_files/style.css">
+<script defer="" src="./My Portfolio_files/bundle.js.download"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);</style><style>/* Styles defined for the desktop or the bigger screen devices*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Header Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(55deg, #16b0cf, #16b0cf, #16b0cf);
+    background-color: transparent;
+}
+.logo {
+    padding: 0 5rem;
+}
+.logo .logo-heading {
+    color: #ffffff;
+}
+
+.menu {
+    padding: 0 5rem;
+}
+
+.hamburger {
+    display: none;
+    color: #ffffff4f;
+    font-size: 25px;
+}
+.cross-icon {
+    display: none;
+}
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+}
+.menu-list .menu-list-items {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 856px) and (max-width: 1024px) {
+    .menu-list .menu-list-items {
+        padding: 0.5rem 0.3rem;
+    }
+}
+/* Main Hero Section Styles */
+.hero {
+    background-image: url(http://localhost:3000/static/media/laptop.71537b9d2966c80fa746.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 5% 0;
+}
+.hero .intro {
+    text-align: left;
+    margin: 0 5rem;
+    align-items: end;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(45deg, #16b0cf, #16b0cf);
+    justify-content: space-between;
+    width: 100%;
+}
+.about .about-text {
+    width: 450px;
+    color: #fff;
+    padding: 5rem 1rem 5rem 5rem;
+}
+.about .about-image img {
+    height: 500px;
+    width: 600px;
+    padding: 5rem 5rem 5rem 1rem;
+}
+/* Portfolio section styles */
+.portfolio {
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+}
+.port-card {
+    padding: 0 !important;
+    background: none !important;
+    border: 2px solid #000;
+}
+
+.port-card .image {
+    width: 100%;
+}
+.port-card .image img {
+    height: 200px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+/* Services section styles */
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+}
+.my-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.my-row .my-col {
+    text-align: center;
+    width: 30%;
+}
+.my-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: linear-gradient(#16b0cf, #16b0cf, #16b0cf);
+    padding: 1rem;
+}
+.icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #4e3673;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon svg {
+    font-size: 30px;
+    color: #ffffff;
+}
+/* Contact section styles */
+.contact {
+    padding: 0 5rem;
+}
+.contact-content {
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+}
+.contact-form-container {
+    width: 50%;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form .form-controls {
+    width: 80%;
+    padding: 10px 0;
+    margin: 1.67rem 0;
+}
+.contact-form .form-btn {
+    width: 83%;
+}
+.contact-details {
+    width: 50%;
+}
+/* Footer Styles */
+.footer {
+    background-color: #16b0cf;
+    color: #ffffff;
+    padding: 2rem;
+}
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 50%;
+    background-color: #16b0cf;
+}
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-menu {
+    padding: 0 5rem;
+}
+.footer-menu .footer-menu-list {
+    display: flex;
+    list-style: none;
+}
+/* utility classes */
+.greet-heading {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.my-heading {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0;
+}
+.sub-heading {
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+    font-weight: lighter;
+}
+.sub-heading1 {
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+    font-weight: lighter;
+}
+.links:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.links {
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+}
+.common-btn {
+    background-color: #3575a9;
+    color: #fff;
+    border: 2px solid #35A99C;
+    transition: all 0.25s;
+}
+.common-btn:hover {
+    background-color: #fff;
+    color: #35A99C;
+    border: 2px solid #3563a9;
+    outline: none;
+}
+.ghost-btn {
+    background-color: #fff;
+    color: #35A99C;
+    border: 2px solid #35A99C;
+    outline: none;
+}
+.ghost-btn:hover {
+    background-color: #35A99C;
+    color: #fff;
+    transition: all 0.25s;
+    border: 2px solid #35A99C;
+}
+.heading-span {
+    font-weight: bolder;
+}
+
+.text-center {
+    text-align: center;
+}
+.small-para {
+    font-size: 14px;
+    color: #fff;
+}
+.white-text {
+    color: #fff;
+}
+.blue-text {
+    color: #363D73;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLCtEQUErRDtBQUUvRDtJQUNJLFNBQVM7SUFDVCxVQUFVO0lBQ1Ysc0JBQXNCO0lBQ3RCLGtDQUFrQztBQUN0QztBQUNBLHlCQUF5QjtBQUN6QjtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLGVBQWU7SUFDZixNQUFNO0lBQ04sV0FBVztJQUNYLG1FQUFtRTtJQUNuRSw2QkFBNkI7QUFDakM7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxlQUFlO0FBQ25COztBQUVBO0lBQ0ksYUFBYTtJQUNiLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSTtRQUNJLHNCQUFzQjtJQUMxQjtBQUNKO0FBQ0EsNkJBQTZCO0FBQzdCO0lBQ0kseURBQW1DO0lBQ25DLDRCQUE0QjtJQUM1QiwwQkFBMEI7SUFDMUIsV0FBVztJQUNYLGFBQWE7SUFDYixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0QixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtBQUNwQjs7QUFFQSx5QkFBeUI7QUFDekI7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDBEQUEwRDtJQUMxRCw4QkFBOEI7SUFDOUIsV0FBVztBQUNmO0FBQ0E7SUFDSSxZQUFZO0lBQ1osV0FBVztJQUNYLDRCQUE0QjtBQUNoQztBQUNBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7SUFDWiw0QkFBNEI7QUFDaEM7QUFDQSw2QkFBNkI7QUFDN0I7SUFDSSxnQkFBZ0I7SUFDaEIsZUFBZTtBQUNuQjtBQUNBO0lBQ0kscUJBQXFCO0lBQ3JCLDJCQUEyQjtJ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ZWZpbmVkIGZvciB0aGUgZGVza3RvcCBvciB0aGUgYmlnZ2VyIHNjcmVlbiBkZXZpY2VzKi9cbkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PVBvcHBpbnMmZGlzcGxheT1zd2FwJyk7XG5ib2R5IHtcbiAgICBtYXJnaW46IDA7XG4gICAgcGFkZGluZzogMDtcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgIGZvbnQtZmFtaWx5OiAnUG9wcGlucycsIHNhbnMtc2VyaWY7XG59XG4vKiBIZWFkZXIgTmF2YmFyIFN0eWxlcyAqL1xuLm5hdmJhciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCg1NWRlZywgIzE2YjBjZiwgIzE2YjBjZiwgIzE2YjBjZik7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG59XG4ubG9nbyB7XG4gICAgcGFkZGluZzogMCA1cmVtO1xufVxuLmxvZ28gLmxvZ28taGVhZGluZyB7XG4gICAgY29sb3I6ICNmZmZmZmY7XG59XG5cbi5tZW51IHtcbiAgICBwYWRkaW5nOiAwIDVyZW07XG59XG5cbi5oYW1idXJnZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgY29sb3I6ICNmZmZmZmY0ZjtcbiAgICBmb250LXNpemU6IDI1cHg7XG59XG4uY3Jvc3MtaWNvbiB7XG4gICAgZGlzcGxheTogbm9uZTtcbn1cbi5tZW51IC5tZW51LWxpc3Qge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgbGlzdC1zdHlsZTogbm9uZTtcbn1cbi5tZW51LWxpc3QgLm1lbnUtbGlzdC1pdGVtcyB7XG4gICAgcGFkZGluZzogMC41cmVtIDFyZW07XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDg1NnB4KSBhbmQgKG1heC13aWR0aDogMTAyNHB4KSB7XG4gICAgLm1lbnUtbGlzdCAubWVudS1saXN0LWl0ZW1zIHtcbiAgICAgICAgcGFkZGluZzogMC41cmVtIDAuM3JlbTtcbiAgICB9XG59XG4vKiBNYWluIEhlcm8gU2VjdGlvbiBTdHlsZXMgKi9cbi5oZXJvIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2xhcHRvcC5qcGcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtc2l6ZTogMTAwJSAxMDAlO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3RhcnQ7XG4gICAgbWFyZ2luOiA1JSAwO1xufVxuLmhlcm8gLmludHJvIHtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICAgIG1hcmdpbjogMCA1cmVtO1xuICAgIGFsaWduLWl0ZW1zOiBlbmQ7XG59XG5cbi8qIEFib3V0IHNlY3Rpb24gc3R5bGVzICovXG4uYWJvdXQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoNDVkZWcsICMxNmIwY2YsICMxNmIwY2YpO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5hYm91dCAuYWJvdXQtdGV4dCB7XG4gICAgd2lkdGg6IDQ1MHB4O1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIHBhZGRpbmc6IDVyZW0gMXJlbSA1cmVtIDVyZW07XG59XG4uYWJvdXQgLmFib3V0LWltYWdlIGltZyB7XG4gICAgaGVpZ2h0OiA1MDBweDtcbiAgICB3aWR0aDogNjAwcHg7XG4gICAgcGFkZGluZzogNXJlbSA1cmVtIDVyZW0gMXJlbTtcbn1cbi8qIFBvcnRmb2xpbyBzZWN0aW9uIHN0eWxlcyAqL1xuLnBvcnRmb2xpbyB7XG4gICAgbWFyZ2luOiA0LjhyZW0gMDtcbiAgICBwYWRkaW5nOiAwIDVyZW07XG59XG4ucG9ydC1jYXJkIHtcbiAgICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG4gICAgYmFja2dyb3VuZDogbm9uZSAhaW1wb3J0YW50O1xuICAgIGJvcmRlcjogMnB4IHNvbGlkICMwMDA7XG59XG5cbi5wb3J0LWNhcmQgLmltYWdlIHtcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5wb3J0LWNhcmQgLmltYWdlIGltZyB7XG4gICAgaGVpZ2h0OiAyMDBweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMjBweDtcbiAgICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAyMHB4O1xufVxuLyogU2VydmljZXMgc2VjdGlvbiBzdHlsZXMgKi9cbi5zZXJ2aWNlcyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgbWFyZ2luOiA0LjhyZW0gMDtcbiAgICBwYWRkaW5nOiAwIDVyZW07XG59XG4ubXktcm93IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMnJlbSAwO1xufVxuLm15LXJvdyAubXktY29sIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgd2lkdGg6IDMwJTtcbn1cbi5teS1jYXJkIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYm9yZGVyLXJhZGl1czogMjBweDtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoIzE2YjBjZiwgIzE2YjBjZiwgIzE2YjBjZik7XG4gICAgcGFkZGluZzogMXJlbTtcbn1cbi5pY29uIHtcbiAgICBoZWlnaHQ6IDEwMHB4O1xuICAgIHdpZHRoOiAxMDBweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzRlMzY3MztcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG4uaWNvbiBzdmcge1xuICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICBjb2xvcjogI2ZmZmZmZjtcbn1cbi8qIENvbnRhY3Qgc2VjdGlvbiBzdHlsZXMgKi9cbi5jb250YWN0IHtcbiAgICBwYWRkaW5nOiAwIDVyZW07XG59XG4uY29udGFjdC1jb250ZW50IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1hcmdpbjogM3JlbSAwO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcbn1cbi5jb250YWN0LWZvcm0tY29udGFpbmVyIHtcbiAgICB3aWR0aDogNTAlO1xufVxuLmNvbnRhY3QtZm9ybSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuLmNvbnRhY3QtZm9ybSAuZm9ybS1jb250cm9scyB7XG4gICAgd2lkdGg6IDgwJTtcbiAgICBwYWRkaW5nOiAxMHB4IDA7XG4gICAgbWFyZ2luOiAxLjY3cmVtIDA7XG59XG4uY29udGFjdC1mb3JtIC5mb3JtLWJ0biB7XG4gICAgd2lkdGg6IDgzJTtcbn1cbi5jb250YWN0LWRldGFpbHMge1xuICAgIHdpZHRoOiA1MCU7XG59XG4vKiBGb290ZXIgU3R5bGVzICovXG4uZm9vdGVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTZiMGNmO1xuICAgIGNvbG9yOiAjZmZmZmZmO1xuICAgIHBhZGRpbmc6IDJyZW07XG59XG4uZm9vdGVyLWxpc3QtaXRlbXMge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDUwcHg7XG4gICAgd2lkdGg6IDUwcHg7XG4gICAgbWFyZ2luOiAxcmVtIDFyZW0gMCAxcmVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTZiMGNmO1xufVxuLmZvb3Rlci1saW5rcyB7XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cbi5zb2NpYWwtbGlua3Mge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5mb290ZXItbWVudSB7XG4gICAgcGFkZGluZzogMCA1cmVtO1xufVxuLmZvb3Rlci1tZW51IC5mb290ZXItbWVudS1saXN0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XG59XG4vKiB1dGlsaXR5IGNsYXNzZXMgKi9cbi5ncmVldC1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDEuM3JlbTtcbiAgICBmb250LXdlaWdodDogbGlnaHRlcjtcbiAgICBtYXJnaW46IDA7XG4gICAgbGV0dGVyLXNwYWNpbmc6IDFweDtcbn1cbi5teS1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDEuM3JlbTtcbiAgICBmb250LXdlaWdodDogbGlnaHRlcjtcbiAgICBtYXJnaW46IDA7XG59XG4uc3ViLWhlYWRpbmcge1xuICAgIG1hcmdpbjogMDtcbiAgICBmb250LXNpemU6IDFyZW07XG4gICAgY29sb3I6ICMwMDA7XG4gICAgZm9udC13ZWlnaHQ6IGxpZ2h0ZXI7XG59XG4uc3ViLWhlYWRpbmcxIHtcbiAgICBtYXJnaW46IDA7XG4gICAgZm9udC1zaXplOiAxcmVtO1xuICAgIGNvbG9yOiAjMDAwO1xuICAgIGZvbnQtd2VpZ2h0OiBsaWdodGVyO1xufVxuLmxpbmtzOmhvdmVyIHtcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgI2ZmZjtcbn1cblxuLmxpbmtzIHtcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgdHJhbnNwYXJlbnQ7XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuMjVzO1xuICAgIHBhZGRpbmc6IDVweDtcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgY29sb3I6ICNmZmZmZmY7XG59XG4uYnRuIHtcbiAgICBwYWRkaW5nOiAxMHB4IDIwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBsZXR0ZXItc3BhY2luZzogMXB4O1xuICAgIGJvcmRlcjogbm9uZTtcbn1cbi5jb21tb24tYnRuIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzU3NWE5O1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlcjogMnB4IHNvbGlkICMzNUE5OUM7XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuMjVzO1xufVxuLmNvbW1vbi1idG46aG92ZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gICAgY29sb3I6ICMzNUE5OUM7XG4gICAgYm9yZGVyOiAycHggc29saWQgIzM1NjNhOTtcbiAgICBvdXRsaW5lOiBub25lO1xufVxuLmdob3N0LWJ0biB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgICBjb2xvcjogIzM1QTk5QztcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMzVBOTlDO1xuICAgIG91dGxpbmU6IG5vbmU7XG59XG4uZ2hvc3QtYnRuOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzVBOTlDO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjI1cztcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMzVBOTlDO1xufVxuLmhlYWRpbmctc3BhbiB7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcbn1cblxuLnRleHQtY2VudGVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4uc21hbGwtcGFyYSB7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGNvbG9yOiAjZmZmO1xufVxuLndoaXRlLXRleHQge1xuICAgIGNvbG9yOiAjZmZmO1xufVxuLmJsdWUtdGV4dCB7XG4gICAgY29sb3I6ICMzNjNENzM7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h3 class="logo-heading">Lavanya V Shahapur</h3>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="http://localhost:3000/#home">
+                            Home</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="http://localhost:3000/#portfolio">
+                            Skills</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="http://localhost:3000/#about">
+                            About Me</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="http://localhost:3000/#services">
+                            Projects</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="http://localhost:3000/#contact"> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h2 class="greet-heading">Hello, I'm</h2>
+                <h2 class="my-heading">Lavanya V Shahapur</h2>
+                <h3 class="sub-heading">
+                    An enthusiastic Software Developer who is 
+                </h3>
+                <h3 class="sub-heading1">
+                     a fresher with strong work ethic and great interest to work in the software industry
+                </h3>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Featured Skills</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./My Portfolio_files/dsa-new.webp" alt="Web Design Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Data Structures and Algorithms</h3>
+                        <p class="small-para blue-text">Problem Solving</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./My Portfolio_files/oops-concept-in-cpp.png" alt="Web Development Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Object Oreinted Programming
+                        </h3>
+                        <p class="small-para blue-text">C++</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./My Portfolio_files/logo512.png" alt="SEO Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Full Stack Development</h3>
+                        <p class="small-para blue-text">MERN Stack - Reactjs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./My Portfolio_files/operating system.png" alt="Content Writting Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Operating Systems
+                        </h3>
+                        <p class="small-para blue-text">Windows/Linux</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./My Portfolio_files/difference_between_sql_and_mysql.avif" alt="Wordpress Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Database Management System
+                        </h3>
+                        <p class="small-para blue-text">
+                            MySQL, SQL
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./My Portfolio_files/TCP-IP-Model.webp" alt="Video Editing Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Computer Networks
+                        </h3>
+                        <p class="small-para blue-text">TCP/IP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h2 class="about-heading">About Me</h2>
+            <p class="lead-para">
+               I am a Computer Science and Engineering Graduate from the KLE Technological University, Hubballi, Karnataka, India from 
+               the batch of 2020-2024. With the CGPA of 9.09, I completed my professional degree alongside with great enthusiasm for the software industry.  
+            </p>
+    
+            <h2 class="work-heading">Work at Accenture</h2>
+            <p class="work-para">
+                    I served as a Packaged Application Development associate at Accenture Solutions, Bengaluru, India from July 2024 to April 2025.
+                    I got to work along the Siemens-Energy-Shop Client Project, which involved B2B e-commerce application handling and customer relationship management 
+                    through utilising the SAP Hybris technology. I had a great experience working and handling different service requests with clients.
+                </p>
+            
+                <h2 class="next-heading">Internship at Next Afield</h2>
+                <p class="next-para">
+                    I am currently working as a Full Stack Developer Intern at the Next Afield solutions, Noida, India, which serves as a consulting firm 
+                    for various domains of the agricultural industry.
+                </p>
+            
+        </div>
+        <div class="about-image">
+            <img src="./My Portfolio_files/LavanyaShahapur.jpg" alt="About Image">
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">Projects</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Website Development</h3>
+                        <p class="small-para">
+                            A portfolio website built using the basic technolgies like HTML,CSS,JavaScript. 
+                            The front-end technologies were utilised to build this sample viewable website having access
+                            to various informations about my education, work experience and skills learnt.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            Computer Networks
+                        </h3>
+                        <p class="small-para">
+                            Evaluation of Quality of Service of 5G Networks in a virtual environment for 
+                            RAN Networks.The analysis gave many insights to find the varying relation between 
+                            the workload/number of users along with the throughput recieved. Video-Streaming of data was used as the test case for the evaluation.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-solid fa-times"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Machine Learning</h3>
+                        <p class="small-para">
+                            Sentimental Analysis of low resource african languages using different
+                            algorithms to classify the tweets databases into positive,negative
+                            and neutral expressions. The project code was also submitted to the 
+                            AfriSenti Eval contest 2023 of Codalab Platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-details">
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">shahapurlavanya@gmail.com</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE</h5>
+                    <p class="contact-text">+91 6361242771</p>
+                </div>
+                 <div class="details">
+                    <h5 class="contact-heading">LinkedIn</h5>
+                     <a class="contact-links" href="https://www.linkedin.com/in/lavanya-v-shahapur-7338a533b/">Lavanya V Shahapur
+                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2023 All rights reserved.
+            </h4>
+        </div>
+    </footer>
+
+
+
+</body></html>
